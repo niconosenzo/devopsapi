@@ -1,3 +1,8 @@
+# Manually create the app binary
+.PHONY: install
+install:
+	go build -o api .
+
 # Run the suit (unit) tests
 .PHONY: test
 test:
