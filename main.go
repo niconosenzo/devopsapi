@@ -1,14 +1,11 @@
 package main
 
 import (
-	"github.com/niconosenzo/ndnapi/app"
-	"github.com/niconosenzo/ndnapi/config"
+	"github.com/niconosenzo/devopsapi/pkg/app"
 )
 
 func main() {
-	config := config.GetConfig()
-
 	app := &app.App{}
-	app.Initialize(config)
+	app.Initialize()
 	app.Run(":3000")
 }
