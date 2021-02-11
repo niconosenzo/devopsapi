@@ -8,7 +8,7 @@ This piece of code has been created as a code exercise, it's not intended for pr
     make install
     ./api
 
-## Build the container and push to the container registry
+## Build and Push the container to a given registry
 
     make build
 
@@ -22,13 +22,13 @@ This piece of code has been created as a code exercise, it's not intended for pr
 
 # REST API
 
-The REST API to the example app is described below.
+API endpoints.
 
 ## Get list of users (when deployed locally, otherwise replace localhost with the correct address)
 
 ### Request
 
-`GET /uses/`
+`GET /users/`
 
     curl http://localhost:3000/users
 
